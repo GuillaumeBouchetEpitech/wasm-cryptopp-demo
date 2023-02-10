@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Wasm Crypto++ Demo</title>
+
+    <style>
+      * {
+        background-color: #0F0F0F;
+        border: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        font-family: arial;
+        color: #8F8F8F;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      #renderArea {
+        border: 0px none;
+        margin: 0px auto; /* horizontally centered */
+        padding: 0px none;
+        background-color: black;
+        width: 800px;
+        height: 600px;
+      }
+
+      #main-description {
+        text-align: center;
+      }
+
+      #loggerOutput {
+        width: 99%;
+        margin: 0px auto; /* horizontally centered */
+        border: 0px none;
+        padding: 0px none;
+        background-color: black;
+        color: white;
+        font-family: 'Lucida Console', Monaco, monospace;
+        outline: none;
+        display: block;
+      }
+
+      .redText {
+        color: #C88;
+      }
+    </style>
+
+    <script type="module" src="js/bundle.js"></script>
+  </head>
+  <body>
+
+    <div id="main-description">
+      <h1>Wasm Crypto++ Demo</h1>
+      <h2 class="redText">(Source Code: <a href="https://github.com/GuillaumeBouchetEpitech/wasm-cryptopp-demo">GitHub link</a>)</h2>
+    </div>
+
+    <textarea id="loggerOutput" rows="40" readonly></textarea>
+
+  </body>
+</html>
