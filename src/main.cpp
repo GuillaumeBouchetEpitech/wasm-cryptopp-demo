@@ -85,8 +85,10 @@ char*
 getHeapString()
 {
   constexpr std::string_view k_message = "Hello from the wasm heap!";
-  char* pMessage = new char[k_message.size()];
-  std::memcpy(pMessage, k_message.data(), k_message.size());
+  const std::size_t size = k_message.size();
+  char* pMessage = new char[size + 1];
+  std::memcpy(pMessage, k_message.data(), size + 1);
+  pMessage[size] = '\0';
   return pMessage;
 }
 
